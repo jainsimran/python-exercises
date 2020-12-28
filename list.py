@@ -31,3 +31,16 @@ print(appleList)
 # print only first 3 items in list
 first3Items = [x for x in range(3)]
 print(first3Items)
+
+# reverse the duplicate of list 
+reverseList = list.copy()
+reverseList.sort(reverse = True)
+print(reverseList)
+print(list)
+
+# add reverse + list
+list.extend(reverseList)
+print(list)
+
+totalLen = "total number of items in list is " + str(len(list)) #converted int to string to add both
+print(totalLen)
